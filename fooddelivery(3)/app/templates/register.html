@@ -1,0 +1,14 @@
+<h2>Register</h2>
+<form method="post">
+{% csrf_token %}
+<input type="text" name="username" placeholder="username"><br><br>
+<input type="text" name="password" placeholder="password"><br><br>
+  <select name="role" required>
+        <option value="">Select Role</option>
+        <option value="CUSTOMER">Customer</option>
+        <option value="DELIVERY">Delivery</option>
+        
+    </select>
+<input type="submit">
+
+</form>

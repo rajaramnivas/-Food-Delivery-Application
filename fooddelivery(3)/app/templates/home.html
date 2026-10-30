@@ -1,0 +1,11 @@
+<h2>Food Menu</h2>
+
+{% for f in foods  %}
+
+<p>
+{{f.name}} - {{f.price}}
+<a href="/order/{{f.id}}/">order</a>
+</p>
+
+
+{% endfor %}

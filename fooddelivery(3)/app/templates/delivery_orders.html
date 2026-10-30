@@ -1,0 +1,13 @@
+<h2>Delivery partner side</h2>
+
+{% for o in orders%}
+
+<p>{{o.id}}   {{o.status}}
+
+
+    <a href="/delivery/complete/{{o.id}}/">complete</a>
+</p>
+
+
+{%endfor%}
+ 
